@@ -16,7 +16,11 @@
   "files": [
     "dist/src"
   ],
-  "scripts": {
+  "scripts":  {
+    "scripts": {
+  "build:dev": "vite build --mode development"
+  }
+    
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc && npm run analyze -- --exclude dist",
